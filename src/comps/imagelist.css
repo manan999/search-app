@@ -1,0 +1,26 @@
+.list
+{	
+	display:grid ;
+	grid-template-columns: repeat( auto-fill, minmax(25vw, 1fr)) ;
+	grid-gap: 1px 2em ;
+	grid-auto-rows: 10px ;
+}
+
+.list img
+{	box-shadow: 2px 5px 5px #888888 ;
+	width : 25vw ;
+	transition: all 0.5s ;
+}
+
+.list img:hover
+{
+	transform: scale(1.05) ;
+}
+
+
+@media (max-width: 600px) {
+  .list 
+  {
+  	grid-gap: 1em; 	 
+  }
+}
